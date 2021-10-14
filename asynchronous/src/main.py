@@ -15,5 +15,9 @@ def hello_world_with_parameter():
 
     return render_template("hello.html", name=name, method=request.method)
 
+@app.route("/form")
+def form():
+    return render_template("form.html")
+
 if __name__ == "__main__":
     app.run()
