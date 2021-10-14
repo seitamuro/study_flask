@@ -39,7 +39,7 @@ services:
     image: dpage/pgadmin4:3.3
     container_name: flask_tutorial_pgadmin4
     ports:
-      - 80:80
+      - 5050:80
     volumes:
       - ./pgadmin:/var/lib/pgadmin
     environment:
