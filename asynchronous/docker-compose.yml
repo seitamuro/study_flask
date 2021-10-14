@@ -15,7 +15,7 @@ services:
     # ホストのディレクトリ;コンテナのディレクトリ
     volumes:
       # /docker-entrypoint-initdb.dはコンテナ初回起動時に実行されるスクリプトを置く場所
-      - ./DB/init/:/docker-entrypoint-initdb.d
+      - ./postgresql/init/:/docker-entrypoint-initdb.d
       # /var/lib/postgresql/dataはpostgresqlのデータが保存されている場所
       - /Users/${USER}/Volumes/flask_tutorial/postgres:/var/lib/postgresql/data
 

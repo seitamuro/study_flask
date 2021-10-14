@@ -19,3 +19,14 @@ WSL上で実行する際はsetup_docker.shを事前に実行する.
 # Postgresqlのサーバーの作り方
 
 .envファイルに書いてあるユーザー名,パスワードでログインする.サーバーを作成する際の｢ホスト名/アドレス｣にはdocker inspect \[postresql\]でNetworkSettings->Networks->Gatewayに書いてあるipアドレスを入力する.
+
+# psycopg2のインストール
+
+事前にpg_configをインストールする必要がある｡
+
+# PostgreSQLに接続するための設定まとめ
+
+DBの接続先はsetting.pyのDATABASEを以下のように設定する｡
+```
+DATABASE = "postgresql://{DBのユーザー}:{DBのパスワード}@{url}:{ポート番号}/{DB名}
+```

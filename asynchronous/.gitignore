@@ -1,5 +1,5 @@
 /venv
 
-/DB
-
 /pgadmin
+
+__pycache__/
