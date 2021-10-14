@@ -3,7 +3,7 @@ from sqlalchemy.orm import *
 from sqlalchemy.ext.declarative import declarative_base
 import psycopg2
 
-DATABASE = "postgresql://postgres:@192.168.224.1:5432/flask_tutorial"
+DATABASE = "postgresql://postgres:@172.18.0.1:5432/flask_tutorial"
 
 ENGINE = create_engine(
     DATABASE,
