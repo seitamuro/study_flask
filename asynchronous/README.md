@@ -1,5 +1,7 @@
 非同期通信を勉強するためのリポジトリです.Flaskを使っています.以下メモ書き
 
+# requirements.txtの作成と使い方
+pip freezeで出力される内容をそのまま使っています｡python -m venv -r requirements.txtで対応した仮想環境を作成することができます｡
 # docker-composeの使い方
 
 docker-composeでサーバーを立ち上げる際には以下のコマンドを使用する
